@@ -1,0 +1,21 @@
+body {
+width:100%;
+}
+
+#logo {
+margin: 8% auto 2% auto;
+width:40%;
+}
+
+#logo img {
+width: 100%;
+}
+
+#mainmenu {
+width:90%;
+margin: 20% auto 0 auto;
+}
+
+.puzzel {
+display:none;
+}

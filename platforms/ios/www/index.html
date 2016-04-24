@@ -2,14 +2,25 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, user-scalable=no,
-		shrink-to-fit=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-    <title>Wieskamp Puzzeltocht</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'"/>
+	<meta name="viewport" content="width=device-width, user-scalable=no, shrink-to-fit=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>Wieskamp Puzzeltocht app</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/wieskamp.css">
     <script src="cordova.js"></script>
+
     <script src="libs/jquery/jquery.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
     </head>
 <body>
-    <h1>HOI</h1>
+    <div id="logo">
+        <img src="img/wieskamp-logo.png" />
+    </div>
+    <ul data-role="listview" data-inset="true" id="mainmenu">
+        <li><a href="puzzelnl.html">Start puzzeltocht Nederlands</a></li>
+        <li><a href="#">Link2</a></li>
+        <li><a href="#">Link3</a></li>
+    </ul>
 
 </body>
 

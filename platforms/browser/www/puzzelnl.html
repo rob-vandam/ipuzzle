@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'"/>
+	<meta name="viewport" content="width=device-width, user-scalable=no, shrink-to-fit=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta charset="UTF-8">
+    <title>Puzzel Nederlands</title>
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/wieskamp.css">
+	<script src="cordova.js"></script>
+    <script src="libs/jquery/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script>
+	// Redirect console if running from Evothings Workbench.
+	if (window.hyper) { console.log = hyper.log }
+	</script>
+
+</head>
+<body>
+    <div id="logo">
+        <img src="img/wieskamp-logo.png" />
+    </div>
+
+<div class="puzzel" id="start-pagina">
+		<div class="content">
+			<h1>Start van de puzzeltocht</h1>
+			<p>Start in de receptie. Kijk of je met de telefoon de eerste kan vinden!</p>
+		</div>
+	</div>
+	<div class="puzzel" id="eerste">
+		<div class="content">
+			<h1>Stap 2</h1>
+			<p>De tweede is verstopt in de buurt van de dierenweide. Kan je deze ook vinden?</p>
+		</div>
+	</div>
+	<div class="puzzel" id="tweede">
+		<div class="content">
+			<h1>Stap 3</h1>
+			<p>De volgende wordt moeilijk! </p>
+		</div>
+	</div>
+	<div class="puzzel" id="derde">
+		<div class="content">
+			<h1>Stap 3</h1>
+			<p>De volgende wordt moeilijk! </p>
+		</div>
+	</div>
+	<div class="puzzel" id="laatste">
+		<div class="content">
+			<h1>Stap 4</h1>
+			<p>Gelukt!!!! </p>
+		</div>
+	</div>
+	<script src="js/puzzel.js"></script>
+</body>
+</html>
