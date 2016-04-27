@@ -36,8 +36,8 @@
         </receiver>
         <activity android:exported="false" android:launchMode="singleInstance" android:name="de.appplant.cordova.plugin.notification.ClickActivity" android:theme="@android:style/Theme.NoDisplay" />
     </application>
-    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="23" /> <!-- was 14 en 23 -->
-    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="23" />
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />

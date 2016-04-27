@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="nl.wieskamp.puzzeltocht" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="nl.wieskamp.puzzeltocht" version="0.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Wieskamp Puzzeltocht</name>
     <description>
         Vind met deze app alle iBeacons die zijn verstopt op de camping.
@@ -44,8 +44,8 @@
               <icon src="res/ios/Icon-40.png" width="40" height="40" />
               <icon src="res/ios/Icon-40@2x.png" width="80" height="80" />
               <!-- iPhone / iPod Touch -->
-              <icon src="res/ios/icon.png" width="57" height="57" />
-              <icon src="res/ios/icon@2x.png" width="114" height="114" />
+              <icon src="res/ios/Icon.png" width="57" height="57" />
+              <icon src="res/ios/Icon@2x.png" width="114" height="114" />
               <!-- iPad -->
               <icon src="res/ios/Icon-72.png" width="72" height="72" />
               <icon src="res/ios/Icon-72@2x.png" width="144" height="144" />

@@ -18,11 +18,10 @@
         },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "HelloCordova"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "Wieskamp Puzzeltocht"
         }
     },
-    "dependent_plugins": {
-        "cordova-plugin-device": {
-            "PACKAGE_NAME": "HelloCordova"
-        }
-    }
+    "dependent_plugins": {}
 }

@@ -2,6 +2,8 @@ var app = {};
 
 var pagecounter = 0;
 
+var successsound = new Audio('sounds/success.mp3');
+
 app.beaconRegions =
 [
 	{
@@ -36,8 +38,6 @@ for (i = 0; i < app.beaconRegions.length; i++){
 
 //console.log('paginalijst = ' + paginalijst)
 
-
-
 //console.log(app.beaconRegions);
 
 app.initialize = function()
@@ -51,7 +51,18 @@ app.onDeviceReady = function()
 	// Specify a shortcut for the location manager that
 	// has the iBeacon functions.
 	window.locationManager = cordova.plugins.locationManager
-
+	cordova.plugins.locationManager.isBluetoothEnabled()
+	.then(function(isEnabled){
+	//hyper.log("isEnabled: " + isEnabled);
+	if (isEnabled) {
+	//cordova.plugins.locationManager.disableBluetooth();
+	} else {
+	//cordova.plugins.locationManager.enableBluetooth();
+	alert('Zet bluetooth aan');
+	}
+	})
+	.fail(console.error)
+	.done();
 	// Start tracking beacons!
 	app.startScanForBeacons()
 }
@@ -118,11 +129,12 @@ app.didRangeBeaconsInRegion = function(pluginResult)
 
 	// The region identifier is the page id.
 	var pageId = pluginResult.region.identifier
-	//console.log('ranged beacon: ' + pageId + ' ' + beacon.proximity)
+	//hyper.log('ranged beacon: ' + pageId + ' ' + beacon.proximity + beacon.rssi)
 	//hyper.log(pagecounter);
 	//hyper.log(pageId);
 	// If the beacon is close and represents a new page, then show the page.
-	if ((beacon.proximity == 'ProximityImmediate')&& pageId == paginalijst[pagecounter])
+	//if ((beacon.proximity == 'ProximityImmediate')&& pageId == paginalijst[pagecounter])
+	if ((beacon.rssi > -65 )&& pageId == paginalijst[pagecounter])
 	{
 		//console.log(pageId + paginalijst[pagecounter]);
 		if ((pagecounter -1) < paginalijst.length){
@@ -133,7 +145,7 @@ app.didRangeBeaconsInRegion = function(pluginResult)
 		}
 		//console.log(pagecounter);
 		app.gotoPage(pageId)
-
+		successsound.play();
 		return
 	}
 

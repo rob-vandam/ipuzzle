@@ -2,6 +2,8 @@ var app = {};
 
 var pagecounter = 0;
 
+var successsound = new Audio('sounds/success.mp3');
+
 app.beaconRegions =
 [
 	{
@@ -35,8 +37,6 @@ for (i = 0; i < app.beaconRegions.length; i++){
 //paginalijst.push('laatste');
 
 //console.log('paginalijst = ' + paginalijst)
-
-
 
 //console.log(app.beaconRegions);
 
@@ -145,7 +145,7 @@ app.didRangeBeaconsInRegion = function(pluginResult)
 		}
 		//console.log(pagecounter);
 		app.gotoPage(pageId)
-
+		successsound.play();
 		return
 	}
 
