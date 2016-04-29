@@ -21,6 +21,9 @@
         },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "nl.wieskamp.puzzeltocht"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "nl.wieskamp.puzzeltocht"
         }
     },
     "dependent_plugins": {}

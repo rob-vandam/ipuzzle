@@ -28,6 +28,9 @@
 		22CCC5131630413496DDC4E5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D31693528C54D8CAC44B274 /* libsqlite3.dylib */; };
 		A4C5E23DD09244D6B06E2E39 /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3EA7A8949049E4B8B43A33 /* CDVLogger.m */; };
 		E551F1CFDEA247E19FA9ADE4 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A32B17019084CD19E77BAEA /* CDVDevice.m */; };
+		03D0976D913F46B4BD8B8C06 /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = B64F4D1CE14649938A2BE009 /* CDVNotification.m */; };
+		45166CD9C3E6484CAFD97DB4 /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 194D8EE7177C4F618A90BAF6 /* CDVNotification.bundle */; };
+		E94678522E5F4EF3A262500C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AFEB8A71104C80A0528852 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +93,10 @@
 		A70683A552104A73A9A96F2F /* CDVLogger.h */ = {isa = PBXFileReference; name = "CDVLogger.h"; path = "cordova-plugin-console/CDVLogger.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		1A32B17019084CD19E77BAEA /* CDVDevice.m */ = {isa = PBXFileReference; name = "CDVDevice.m"; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		951CD4E92BD44D0DB928E113 /* CDVDevice.h */ = {isa = PBXFileReference; name = "CDVDevice.h"; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B64F4D1CE14649938A2BE009 /* CDVNotification.m */ = {isa = PBXFileReference; name = "CDVNotification.m"; path = "cordova-plugin-dialogs/CDVNotification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		561AB09C2A644AB99EB818E1 /* CDVNotification.h */ = {isa = PBXFileReference; name = "CDVNotification.h"; path = "cordova-plugin-dialogs/CDVNotification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		194D8EE7177C4F618A90BAF6 /* CDVNotification.bundle */ = {isa = PBXFileReference; name = "CDVNotification.bundle"; path = "CDVNotification.bundle"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.plug-in; explicitFileType = undefined; includeInIndex = 0; };
+		C1AFEB8A71104C80A0528852 /* AudioToolbox.framework */ = {isa = PBXFileReference; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +108,7 @@
 				CE680DBAF1004430B5E06EAE /* CoreBluetooth.framework in Frameworks */,
 				860E68CE042A424BA25B27C6 /* CoreLocation.framework in Frameworks */,
 				22CCC5131630413496DDC4E5 /* libsqlite3.dylib in Frameworks */,
+				E94678522E5F4EF3A262500C /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +170,7 @@
 				0207DA571B56EA530066E2B4 /* Images.xcassets */,
 				3047A50E1AB8057F00498E2A /* config */,
 				8D1107310486CEB800E47090 /* Wieskamp Puzzeltocht-Info.plist */,
+				194D8EE7177C4F618A90BAF6 /* CDVNotification.bundle */,
 			);
 			name = Resources;
 			path = "Wieskamp Puzzeltocht/Resources";
@@ -173,6 +182,7 @@
 				4A14F649DB564C17BF3C176A /* CoreBluetooth.framework */,
 				EED35CAC52A5482D85756A4A /* CoreLocation.framework */,
 				2D31693528C54D8CAC44B274 /* libsqlite3.dylib */,
+				C1AFEB8A71104C80A0528852 /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -218,6 +228,8 @@
 				A70683A552104A73A9A96F2F /* CDVLogger.h */,
 				1A32B17019084CD19E77BAEA /* CDVDevice.m */,
 				951CD4E92BD44D0DB928E113 /* CDVDevice.h */,
+				B64F4D1CE14649938A2BE009 /* CDVNotification.m */,
+				561AB09C2A644AB99EB818E1 /* CDVNotification.h */,
 			);
 			name = Plugins;
 			path = "Wieskamp Puzzeltocht/Plugins";
@@ -301,6 +313,7 @@
 				3047A5141AB8059700498E2A /* build.xcconfig in Resources */,
 				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
 				3047A5121AB8059700498E2A /* build-debug.xcconfig in Resources */,
+				45166CD9C3E6484CAFD97DB4 /* CDVNotification.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +355,7 @@
 				7D8E3196E92D4968B1001636 /* UILocalNotification+APPLocalNotification.m in Sources */,
 				A4C5E23DD09244D6B06E2E39 /* CDVLogger.m in Sources */,
 				E551F1CFDEA247E19FA9ADE4 /* CDVDevice.m in Sources */,
+				03D0976D913F46B4BD8B8C06 /* CDVNotification.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

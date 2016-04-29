@@ -1,5 +1,6 @@
 {
     "CoreBluetooth.framework": 2,
     "CoreLocation.framework": 2,
-    "libsqlite3.dylib": 1
+    "libsqlite3.dylib": 1,
+    "AudioToolbox.framework": 1
 }

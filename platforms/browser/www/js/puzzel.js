@@ -2,8 +2,6 @@ var app = {};
 
 var pagecounter = 0;
 
-var successsound = new Audio('sounds/success.mp3');
-
 app.beaconRegions =
 [
 	{
@@ -130,8 +128,6 @@ app.didRangeBeaconsInRegion = function(pluginResult)
 	// The region identifier is the page id.
 	var pageId = pluginResult.region.identifier
 	//hyper.log('ranged beacon: ' + pageId + ' ' + beacon.proximity + beacon.rssi)
-	//hyper.log(pagecounter);
-	//hyper.log(pageId);
 	// If the beacon is close and represents a new page, then show the page.
 	//if ((beacon.proximity == 'ProximityImmediate')&& pageId == paginalijst[pagecounter])
 	if ((beacon.rssi > -65 )&& pageId == paginalijst[pagecounter])
@@ -145,7 +141,7 @@ app.didRangeBeaconsInRegion = function(pluginResult)
 		}
 		//console.log(pagecounter);
 		app.gotoPage(pageId)
-		successsound.play();
+		navigator.notification.beep(1);
 		return
 	}
 

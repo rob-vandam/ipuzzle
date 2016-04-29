@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-    <Identity Name="nl.wieskamp.puzzeltocht" Publisher="CN=$username$" Version="0.0.2.0" />
+    <Identity Name="nl.wieskamp.puzzeltocht" Publisher="CN=$username$" Version="0.0.5.0" />
     <Properties>
         <DisplayName>Wieskamp Puzzeltocht</DisplayName>
         <PublisherDisplayName>Apache Cordova Team</PublisherDisplayName>
