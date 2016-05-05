@@ -130,7 +130,7 @@ app.didRangeBeaconsInRegion = function(pluginResult)
 	//hyper.log('ranged beacon: ' + pageId + ' ' + beacon.proximity + beacon.rssi)
 	// If the beacon is close and represents a new page, then show the page.
 	//if ((beacon.proximity == 'ProximityImmediate')&& pageId == paginalijst[pagecounter])
-	if ((beacon.rssi > -65 )&& pageId == paginalijst[pagecounter])
+	if ((beacon.rssi > -76 )&& pageId == paginalijst[pagecounter])
 	{
 		//console.log(pageId + paginalijst[pagecounter]);
 		if ((pagecounter -1) < paginalijst.length){

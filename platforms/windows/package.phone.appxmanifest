@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-    <Identity Name="nl.wieskamp.puzzeltocht" Publisher="CN=$username$" Version="0.0.5.0" />
+    <Identity Name="nl.wieskamp.puzzeltocht" Publisher="CN=$username$" Version="0.0.6.0" />
     <mp:PhoneIdentity PhoneProductId="a57782f0-088e-11e6-85f8-d7e6115d9a3c" PhonePublisherId="db093ed5-53b1-45f7-af72-751e8f36ab80" />
     <Properties>
         <DisplayName>Wieskamp Puzzeltocht</DisplayName>
